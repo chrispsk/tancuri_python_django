@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalia De La Stalingrad</title>
+</head>
+<style>
+    * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            font-family: sans-serif;
+            /* border is not added to the width */
+            box-sizing: border-box; 
+        }
+
+        .container {
+            position: relative;
+            margin: auto;
+            width: 100%;
+            height: auto;
+        }
+
+        .row {
+            position: relative;
+            margin: auto;
+            width: 100%;
+            height: auto;
+            /* do not fill with another column if there is space */
+            clear: both;
+            /* do not fill the gap with another html element if there is space */
+            display: table;
+        }
+
+        .col-12 {
+            float: left;
+            width: 100%;
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+        .col-6 {
+            width: 50%;
+            /* background: green; */
+            border: 1px solid black;
+            float: left;
+            padding: 20px;
+        }
+
+    #panzer {
+        visibility:hidden;
+    }
+
+    #abrams {
+        visibility:hidden;
+    }
+    
+    .but {
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Calculate width n*100/12 -->
+            <div class="col-12">
+                <p>Game Simulated! 
+                <a href="{% url 'log' %}" class="but">Start Game</a>
+            </p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Calculate width 6*100/12 -->
+            <div class="col-6">
+            <button onclick="panzerFunction()">Show Panzer Details</button>
+            <br>
+            <span id="panzer">
+                <strong>Parts: </strong>{{dP}}<br>
+                <strong>Health: </strong>{{hP}}
+            </span>
+            </div>
+            <div class="col-6">
+                <button onclick="abramsFunction()">Show Abrams Details</button>
+            <br>
+            <span id="abrams">
+                <strong>Parts: </strong>{{dA}}<br>
+                <strong>Health: </strong>{{hA}}
+            </span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function panzerFunction() {
+            document.getElementById("panzer").style.visibility = "visible";
+        }
+        function abramsFunction() {
+            document.getElementById("abrams").style.visibility = "visible";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+Abrams enter the game. War zone is at 40 
+Panzer enter the game. War zone is at 40 
+Abrams has a zid in front, total distance increase with 20 
+Panzer has a zid in front, total distance increase with 20 
+Panzer, distance made 20 total ramas=40 
+Abrams, distance made 20 total ramas=40 
+Panzer, distance made 40 total ramas=20 
+Panzer has a copac in front, total distance increase with 10 
+Panzer has less than half 
+Abrams, distance made 40 total ramas=20 
+Abrams has a zid in front, total distance increase with 20 
+Panzer, distance made 60 total ramas=10 
+Panzer has nearly finished the race 
+Abrams, distance made 60 total ramas=20 
+Abrams has less than half 
+Panzer, distance made 80 total ramas=-10 
+Panzer Prepared to shoot 
+Abrams, distance made 80 total ramas=0 
+Abrams Prepared to shoot 
+Panzer shoot 12 pts in front, total ramas 65 
+Abrams shoot 34 pts in engine, total ramas 43 
+Panzer shoot 23 pts in tracks, total ramas 42 
+Abrams shoot 35 pts in tureta, total ramas 8 
+Panzer shoot 23 pts in tracks, total ramas 19 
+Abrams shoot 26 pts in tracks, total ramas -18 
+Abrams WON!!! 
